@@ -1,0 +1,8 @@
+.env
+*.db
+*.joblib
+__pycache__/
+*.pyc
+*.zip
+ml_metrics.json
+cloudflared
