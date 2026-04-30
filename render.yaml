@@ -1,0 +1,29 @@
+services:
+  - type: web
+    name: vstu-vk-bot
+    runtime: python
+    buildCommand: pip install -r requirements.txt && python train_model.py
+    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: VK_GROUP_TOKEN
+        sync: false          # вводится вручную в Render Dashboard
+      - key: VK_USER_TOKEN
+        sync: false
+      - key: VK_CONFIRMATION_TOKEN
+        sync: false
+      - key: VK_GROUP_ID
+        sync: false
+      - key: VK_ADMIN_USER_ID
+        sync: false
+      - key: DATABASE_URL
+        fromDatabase:
+          name: vstu-bot-db
+          property: connectionString
+      - key: DEBUG
+        value: "false"
+
+databases:
+  - name: vstu-bot-db
+    databaseName: vstu_bot
+    user: vstu_bot_user
+    plan: free

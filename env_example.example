@@ -1,0 +1,17 @@
+# Скопируй этот файл в .env и заполни своими значениями
+# .env используется только для ЛОКАЛЬНОЙ разработки
+# На Render все переменные вводятся в Dashboard → Environment
+
+VK_GROUP_TOKEN=vk1.a.REPLACE_ME
+VK_USER_TOKEN=vk1.a.REPLACE_ME
+VK_CONFIRMATION_TOKEN=fa7ba701
+VK_SECRET_KEY=
+VK_GROUP_ID=238138431
+VK_ADMIN_USER_ID=362292935
+
+# Для локальной разработки можно использовать SQLite:
+# DATABASE_URL=sqlite+aiosqlite:///./vstu_bot.db
+# Для PostgreSQL локально:
+DATABASE_URL=postgresql://user:password@localhost:5432/vstu_bot
+
+DEBUG=true
