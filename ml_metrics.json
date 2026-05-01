@@ -1,0 +1,41 @@
+{
+  "total_samples": 2495,
+  "distribution": {
+    "ok": 1588,
+    "negative": 590,
+    "spam": 317
+  },
+  "report": {
+    "negative": {
+      "precision": 0.7433628318584071,
+      "recall": 0.711864406779661,
+      "f1-score": 0.7272727272727273,
+      "support": 118.0
+    },
+    "ok": {
+      "precision": 0.8757575757575757,
+      "recall": 0.9088050314465409,
+      "f1-score": 0.8919753086419753,
+      "support": 318.0
+    },
+    "spam": {
+      "precision": 1.0,
+      "recall": 0.8888888888888888,
+      "f1-score": 0.9411764705882353,
+      "support": 63.0
+    },
+    "accuracy": 0.8597194388777555,
+    "macro avg": {
+      "precision": 0.8730401358719942,
+      "recall": 0.836519442371697,
+      "f1-score": 0.8534748355009792,
+      "support": 499.0
+    },
+    "weighted avg": {
+      "precision": 0.8601357179362749,
+      "recall": 0.8597194388777555,
+      "f1-score": 0.859239373974727,
+      "support": 499.0
+    }
+  }
+}
